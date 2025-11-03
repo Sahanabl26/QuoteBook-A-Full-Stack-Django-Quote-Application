@@ -1,0 +1,83 @@
+body {
+    background-color: #a5f5f5;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.signup-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-box {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signup-box .heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.signup-box .field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.signup-box .field b {
+    display: block;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.signup-box .inp {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #eaf3ff;
+    font-size: 15px;
+}
+
+.btn-container,
+.signup-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submit-button,
+.signup-button {
+    padding: 10px 25px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #28b3b3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+.submit-button:hover,
+.signup-button:hover {
+    background-color: #239e9e;
+}
+
+.signup-box .anc {
+    text-decoration: none;
+}
+
+.signup-box p {
+    font-weight: 600;
+    color: #000;
+    margin: 20px 0 10px 0;
+}

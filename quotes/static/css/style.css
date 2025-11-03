@@ -1,0 +1,185 @@
+/* ========================================= */
+/* --- Global & Base Styles --- */
+/* ========================================= */
+
+/* Import the 'Poppins' font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* This creates the nice gradient background for the whole site */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-attachment: fixed;
+}
+
+/* This override fixes the h1 style to be clean */
+h1 {
+    background-color: transparent !important;
+    color: #333 !important;
+    padding: 0 !important;
+    font-weight: 600 !important;
+}
+
+/* ========================================= */
+/* --- Home Page Styles (and Login/Signup) --- */
+/* ========================================= */
+
+/* This is the main "frosted glass" card for the Home page, Login, and Signup */
+.quote-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 0;
+    transition: all 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1) !important;
+}
+
+/* Text inside the main Home page quote card */
+.quote-card .quote-text {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #333;
+}
+
+.quote-card .blockquote-footer {
+    color: #555;
+    font-weight: 600;
+}
+
+/* "New Quote" and "View All" buttons */
+.button-container a {
+    min-width: 150px;
+    padding: 10px 20px;
+}
+
+/* Home Page "Explore by Category" Section */
+.genre-section {
+    width: 100%;
+}
+
+.genre-card {
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    transition: all 0.2s ease-in-out;
+}
+
+.genre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) !important;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.genre-card .card-title {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* ========================================= */
+/* --- All Quotes Page Styles --- */
+/* ========================================= */
+
+/* The smaller cards used in the "All Quotes" grid */
+.quote-list-card {
+    border: none !important;
+    border-radius: 10px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(5px);
+    height: 100%; /* Makes all cards in a row the same height */
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.05) !important;
+}
+
+.quote-list-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) !important;
+}
+
+/* Text inside the smaller quote cards */
+.quote-list-card .quote-text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.quote-list-card .blockquote-footer {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.quote-list-card .card-footer {
+    background: none !important;
+    border-top: 1px solid #f0f0f0 !important;
+}
+
+/* Style for the "Like" button */
+.like-form .btn {
+    background-color: transparent !important;
+    border-color: #dc3545 !important; /* Bootstrap danger color */
+    color: #dc3545 !important;
+    transition: all 0.2s ease;
+}
+
+.like-form .btn:hover {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+/* ========================================= */
+/* --- Add Quote Page Styles --- */
+/* ========================================= */
+/* These rules style the form from {{ form.as_p }} */
+
+.add-quote-form p {
+    margin-bottom: 1.25rem;
+}
+
+.add-quote-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.add-quote-form input[type="text"],
+.add-quote-form textarea,
+.add-quote-form select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.add-quote-form input[type="text"]:focus,
+.add-quote-form textarea:focus,
+.add-quote-form select:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe; /* Bootstrap's focus blue */
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.add-quote-form textarea {
+    min-height: 120px;
+}
